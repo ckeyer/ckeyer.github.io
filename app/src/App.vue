@@ -1,57 +1,22 @@
-@font-face {
-  font-family: 'Noto Sans';
-  font-weight: 400;
-  font-style: normal;
-  src: url('../fonts/Noto-Sans-regular/Noto-Sans-regular.eot');
-  src: url('../fonts/Noto-Sans-regular/Noto-Sans-regular.eot?#iefix') format('embedded-opentype'),
-       local('Noto Sans'),
-       local('Noto-Sans-regular'),
-       url('../fonts/Noto-Sans-regular/Noto-Sans-regular.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-regular/Noto-Sans-regular.woff') format('woff'),
-       url('../fonts/Noto-Sans-regular/Noto-Sans-regular.ttf') format('truetype'),
-       url('../fonts/Noto-Sans-regular/Noto-Sans-regular.svg#NotoSans') format('svg');
-}
+<template>
+  <div id="app">
+    <hello></hello>
+  </div>
+</template>
 
-@font-face {
-  font-family: 'Noto Sans';
-  font-weight: 700;
-  font-style: normal;
-  src: url('../fonts/Noto-Sans-700/Noto-Sans-700.eot');
-  src: url('../fonts/Noto-Sans-700/Noto-Sans-700.eot?#iefix') format('embedded-opentype'),
-       local('Noto Sans Bold'),
-       local('Noto-Sans-700'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.woff') format('woff'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.ttf') format('truetype'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.svg#NotoSans') format('svg');
-}
+<script>
+import Hello from './components/Hello'
 
-@font-face {
-  font-family: 'Noto Sans';
-  font-weight: 400;
-  font-style: italic;
-  src: url('../fonts/Noto-Sans-italic/Noto-Sans-italic.eot');
-  src: url('../fonts/Noto-Sans-italic/Noto-Sans-italic.eot?#iefix') format('embedded-opentype'),
-       local('Noto Sans Italic'),
-       local('Noto-Sans-italic'),
-       url('../fonts/Noto-Sans-italic/Noto-Sans-italic.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-italic/Noto-Sans-italic.woff') format('woff'),
-       url('../fonts/Noto-Sans-italic/Noto-Sans-italic.ttf') format('truetype'),
-       url('../fonts/Noto-Sans-italic/Noto-Sans-italic.svg#NotoSans') format('svg');
+export default {
+  components: {
+    Hello
+  }
 }
+</script>
 
-@font-face {
-  font-family: 'Noto Sans';
-  font-weight: 700;
-  font-style: italic;
-  src: url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot');
-  src: url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot?#iefix') format('embedded-opentype'),
-       local('Noto Sans Bold Italic'),
-       local('Noto-Sans-700italic'),
-       url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff') format('woff'),
-       url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.ttf') format('truetype'),
-       url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans') format('svg');
+<style>
+html {
+  height: 100%;
 }
 
 body {
@@ -80,15 +45,15 @@ h1 {
 }
 
 h2 {
-  color:#393939;
+  color:#42b983;
 }
 
 h3, h4, h5, h6 {
-  color:#494949;
+  color:#42b983;
 }
 
 a {
-  color:#39c;
+  color:#42b983;
   text-decoration:none;
 }
 
@@ -107,7 +72,7 @@ a:hover small {
   color:#777;
 }
 
-.wrapper {
+#app {
   width:860px;
   margin:0 auto;
 }
@@ -322,3 +287,4 @@ footer {
     color:#444;
   }
 }
+</style>
